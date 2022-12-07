@@ -1,0 +1,22 @@
+﻿//Задача 25: Напишите цикл, который принимает на вход два числа (A и 😎 
+// и возводит число A в натуральную степень B. 
+// 3, 5 -> 243 (3⁵) 
+// 2, 4 -> 16 
+ 
+Console.Write("Введите число А: "); 
+int a = Convert.ToInt32(Console.ReadLine()); 
+ 
+Console.Write("Введите число B: "); 
+int b = Convert.ToInt32(Console.ReadLine()); 
+ 
+int Result(int a, int b) 
+{ 
+    int res = a; 
+    for (int i = 1; i < b; i++) 
+    { 
+        res = res * a; 
+    } 
+    return res; 
+} 
+ 
+Console.WriteLine($"{a} в степени {b} = {Result(a, b)}");
